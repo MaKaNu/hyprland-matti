@@ -26,25 +26,25 @@ If you are worried about entering your password, you can cancel the script now w
 sleep 3
 
 # Check if yay is installed
-ISyay=/sbin/yay
+ISparu=/usr/bin/paru
 
-if [ -f "$ISyay" ]; then
-    printf "\n%s - yay was located, moving on.\n" "$GREEN"
+if [ -f "$ISparu" ]; then
+    printf "\n%s - paru was located, moving on.\n" "$GREEN"
 else 
-    printf "\n%s - yay was NOT located\n" "$YELLOW"
-    read -n1 -rep "${CAT} Would you like to install yay (y,n)" INST
+    printf "\n%s - paru was NOT located\n" "$YELLOW"
+    read -n1 -rep "${CAT} Would you like to install paru (y,n)" INST
     if [[ $INST =~ ^[Yy]$ ]]; then
-        git clone https://aur.archlinux.org/yay.git
-        cd yay
+        git clone https://aur.archlinux.org/paru-bin.git
+        cd paru-bin
         makepkg -si --noconfirm 2>&1 | tee -a $LOG
         cd ..
     else
-        printf "%s - yay is required for this script, now exiting\n" "$RED"
+        printf "%s - paru is required for this script, now exiting\n" "$RED"
         exit
     fi
 # update system before proceed
     printf "${YELLOW} System Update to avoid issue\n" 
-    yay -Syu --noconfirm 2>&1 | tee -a $LOG
+    paru -Syu --noconfirm 2>&1 | tee -a $LOG
 fi
 
 # Function to print error messages
@@ -76,9 +76,9 @@ if [[ $inst =~ ^[Yy]$ ]]; then
    app_pkgs2="polkit-gnome ffmpeg neovim viewnior pavucontrol thunar ffmpegthumbnailer tumbler thunar-archive-plugin"
    theme_pkgs="nordic-theme papirus-icon-theme starship "
 
-    yay -R --noconfirm swaylock waybar
+    paru -R --noconfirm swaylock waybar
 
-    if ! yay -S --noconfirm $git_pkgs $hypr_pkgs $font_pkgs $font_pkgs2 $app_pkgs $app_pkgs2 $theme_pkgs 2>&1 | tee -a $LOG; then
+    if ! paru -S --noconfirm $git_pkgs $hypr_pkgs $font_pkgs $font_pkgs2 $app_pkgs $app_pkgs2 $theme_pkgs 2>&1 | tee -a $LOG; then
         print_error " Failed to install additional packages - please check the install.log \n"
         exit 1
     fi
