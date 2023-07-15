@@ -26,7 +26,7 @@ If you are worried about entering your password, you can cancel the script now w
 sleep 3
 
 # Check if yay is installed
-ISparu=/usr/bin/paru
+ISparu=/sbin/paru
 
 if [ -f "$ISparu" ]; then
     printf "\n%s - paru was located, moving on.\n" "$GREEN"
