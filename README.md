@@ -6,20 +6,20 @@
 
 Ensure base-devel is installed before proceeding
 
-### Yay
+### Paru
 
 **Important**: Execute the following commands as a regular user, NOT as root!
 
 ```
-git clone https://aur.archlinux.org/yay-bin
-cd yay-bin
+git clone https://aur.archlinux.org/paru-bin
+cd paru-bin
 makepkg -si
 ```
 
 ### Required Packages
 
 ``` bash
-yay -S hyprland polkit-gnome ffmpeg neovim viewnior rofi      \
+paru -S hyprland polkit-gnome ffmpeg neovim viewnior rofi      \
 pavucontrol thunar starship wl-clipboard wf-recorder swaybg   \
 grimblast-git ffmpegthumbnailer tumbler playerctl             \
 noise-suppression-for-voice thunar-archive-plugin kitty       \
