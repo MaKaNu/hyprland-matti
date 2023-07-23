@@ -8,44 +8,48 @@
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    background: rgba(18,11,16,0);
+    color: #FF0055;
 }
 
 tooltip {
-    background: #1e1e2e;
+    background: rgba(18,11,16,0.8);
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: #F4EF00;
 }
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    color: #FFA200;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #F4EF00;
+    border-radius: 10px;
 }
 
 #workspaces button.focused {
-    color: #a6adc8;
+    color: #F4EF00;
     background: #eba0ac;
     border-radius: 10px;
+    border-color: #009550;
 }
 
 #workspaces button.urgent {
-    color: #11111b;
+    color: #FF0055;
     background: #a6e3a1;
     border-radius: 10px;
+    border-color: #009550;
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
+    background: #563466;
+    color: #FF0055;
     border-radius: 10px;
+    border-color: #009550;
 }
 
 #custom-language,
@@ -68,12 +72,13 @@ tooltip {
 }
 
 #tray {
+    background: #120B10;
     border-radius: 10px;
     margin-right: 10px;
 }
 
 #workspaces {
-    background: #1e1e2e;
+    background: #120B10;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -94,6 +99,7 @@ tooltip {
 }
 
 #custom-updates {
+    background: #120B10;
     color: #f5c2e7;
     border-radius: 10px 0px 0px 10px;
     border-left: 0px;
@@ -101,12 +107,14 @@ tooltip {
 }
 
 #window {
+    background: #120B10;
     border-radius: 10px;
     margin-left: 60px;
     margin-right: 60px;
 }
 
 #clock {
+    background: #120B10;
     color: #fab387;
     border-radius: 10px 0px 0px 10px;
     margin-left: 5px;
@@ -114,18 +122,21 @@ tooltip {
 }
 
 #network {
+    background: #120B10;
     color: #f9e2af;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio {
+    background: #120B10;
     color: #89b4fa;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
+    background: #120B10;
     color: #cba6f7;
     border-radius: 0px 10px 10px 0px;
     border-left: 0px;
@@ -134,6 +145,7 @@ tooltip {
 }
 
 #battery {
+    background: #120B10;
     color: #a6e3a1;
     border-radius: 0 10px 10px 0;
     margin-right: 10px;
@@ -141,6 +153,7 @@ tooltip {
 }
 
 #custom-weather {
+    background: #120B10;
     border-radius: 0px 10px 10px 0px;
     border-right: 0px;
     margin-left: 0px;
