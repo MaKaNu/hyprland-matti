@@ -20,9 +20,13 @@ tooltip {
     border-color: #F4EF00;
 }
 
+tooltip label {
+    color: #F4EF00;
+}
+
 #workspaces button {
     padding: 5px;
-    color: #FFA200;
+    color: #BB7800;
     margin-right: 5px;
 }
 
@@ -34,15 +38,11 @@ tooltip {
 #workspaces button.focused {
     color: #F4EF00;
     background: #eba0ac;
-    border-radius: 10px;
-    border-color: #009550;
 }
 
 #workspaces button.urgent {
     color: #FF0055;
     background: #a6e3a1;
-    border-radius: 10px;
-    border-color: #009550;
 }
 
 #workspaces button:hover {
@@ -50,6 +50,8 @@ tooltip {
     color: #FF0055;
     border-radius: 10px;
     border-color: #009550;
+    box-shadow: 0px -1px #F4EF00;
+    text-shadow: inherit;
 }
 
 #custom-language,
@@ -115,7 +117,7 @@ tooltip {
 
 #clock {
     background: #120B10;
-    color: #fab387;
+    color: #FF0055;
     border-radius: 10px 0px 0px 10px;
     margin-left: 5px;
     border-right: 0px;
