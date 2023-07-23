@@ -1,0 +1,15 @@
+#!/bin/bash
+
+monitor_resolution=$(hyprctl monitors | awk -Fx 'FNR==2 {print $2}' | awk -F@ '{print $1}')
+
+wp_array=($(ls ~/.wallpapers/$monitor_resolution))
+echo ${wp_array[0]}
+echo ${wp_array[1]}
+num_wp=${#wp_array[@]}
+
+random_idx=$(($RANDOM % $num_wp))
+echo $random_idx
+wp_file="$HOME/.wallpapers/$monitor_resolution/${wp_array[$random_idx]}"
+echo $wp_file
+swww img $wp_file
+notify-send "NEW BACKGROUND: $monitor_resolution/${wp_array[random_idx]}"

@@ -1,0 +1,16 @@
+#!/bin/bash
+IFS_OLD=$IFS
+IFS="|"
+
+check_array=("steam${IFS}heroic")
+window_class=$(hyprctl activewindow -j | jq -r ".class")
+
+if [[ "${IFS}${check_array[*]}${IFS}" =~ "${IFS}${window_class}${IFS}" ]]; then
+	notify-send "I am UNMAPPING $window_class"
+	xdotool getactivewindow windowunmap
+else
+	notify-send "I am KILLING $window_class"
+	hyprctl dispatch killactive ""
+fi
+
+IFS=IFS_OLD
