@@ -1,3 +1,6 @@
 
 *.log
 dotconfig/pipewire/jackseession/session.xml
+.*old
+.*new
+.*bak
