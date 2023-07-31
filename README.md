@@ -55,6 +55,33 @@ adobe-source-code-pro-fonts brightnessctl hyprpicker-git
 - [x] Additional Customizations for Waybar - Battery, Backlight, etc.
 - [ ] Automatic Configuration - Long-term goal
 
+## Changes by MaKaNu
+
+- install script
+  - use `paru` instead of `yay`
+- gitignore
+    - ignore logs
+    - ignore jack sessions
+- add update script
+- new hyprscripts
+  - killactive script (for steam) 
+  - changes_bg
+- cyberpunk theme
+  - kitty
+  - hyprland border
+  - waybar
+  - rofi
+  - gtk-theme (tbd)
+- fixed emotes
+  - jetbrains mono nerd
+- swww instead of swaybg
+- keyboard
+  - numlock true
+  - layout de
+- dpendencies
+  - checkupdates+aur
+  - python-requests
+
 ## References
 
 - Official Hyprland GitHub: <https://github.com/hyprwm/Hyprland>
