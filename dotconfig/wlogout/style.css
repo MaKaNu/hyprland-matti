@@ -1,8 +1,8 @@
 window {
     font-family: monospace;
     font-size: 14pt;
-    color: #cdd6f4; /* text */
-    background-color: rgba(30, 30, 46, 0.5);
+    color: #F4EF00; /* text */
+    background-color: rgba(18, 11, 16, 0.3);
 }
 
 button {
@@ -10,18 +10,20 @@ button {
     background-position: center;
     background-size: 25%;
     border: none;
-    background-color: rgba(30, 30, 46, 0);
+    color: #F4EF00;
+    text-shadow: inherit;
+    background-color: rgba(18, 11, 16, 0.8);
     margin: 5px;
     transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 button:hover {
-    background-color: rgba(49, 50, 68, 0.1);
+    background-color: rgba(255, 00, 85, 0.2);
 }
 
 button:focus {
-    background-color: #cba6f7;
-    color: #1e1e2e;
+    background-color: #FF0055;
+    color: #F4EF00;
 }
 
 #lock {

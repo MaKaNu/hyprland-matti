@@ -102,7 +102,7 @@ tooltip label {
 
 #custom-updates {
     background: #120B10;
-    color: #f5c2e7;
+    color: #FF0055;
     border-radius: 10px 0px 0px 10px;
     border-left: 0px;
     border-right: 0px;
@@ -132,14 +132,14 @@ tooltip label {
 
 #pulseaudio {
     background: #120B10;
-    color: #89b4fa;
+    color: #F4DF00;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
     background: #120B10;
-    color: #cba6f7;
+    color: #F4EF00;
     border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
