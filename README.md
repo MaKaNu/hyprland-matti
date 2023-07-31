@@ -1,6 +1,6 @@
 # Hyprland Configuration Files by Titus
 
-![Screenshot](https://github.com/ChrisTitusTech/hyprland-titus/raw/main/hyprland-titus.png)
+![Screenshot](https://github.com/MaKaNu/hyprland-matti/raw/main/hyprland-cyberpunk.png)
 
 ## Installation
 
